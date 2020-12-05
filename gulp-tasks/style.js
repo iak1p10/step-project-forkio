@@ -8,13 +8,13 @@ const styles = (cb) => {
 	src("./src/styles/style.scss")
 		.pipe(sass({outputStyle:"compressed"})
 		.on('error',sass.logError))
-		.pipe(browsersync.reload({ stream: true }))
 		.pipe(autoprefixer({
 			overrideBrowserslist:  ['last 2 versions'],
             cascade: false
 		}))
 		.pipe(concat('style-min.css'))
 		.pipe(dest("./dist/css/"))
+		.pipe(browsersync.reload({ stream: true }))
 	cb()
 };
 

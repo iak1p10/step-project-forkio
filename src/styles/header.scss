@@ -1,0 +1,96 @@
+header{
+    background-color: #27262A;
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+.header_btn{
+    background-color: #8D81AC;
+    border-radius: 40px;
+    width: 119px;
+    height: 37px;
+    border: none;
+    outline: none;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 15px;
+    color: #FFFFFF;
+    margin: 34px 0 32px;
+}
+.header-list{
+    display: none;
+    &.active{
+        display: block;
+        position: absolute;
+        width: 290px;
+        left: 0;
+        top: 103px;
+        background-color:#333333;
+    }
+    &_item{
+        padding: 29px 0 21px 35px;
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 26px;
+        line-height: 26px;
+        color: #FFFFFF;
+        border-bottom: 3px solid #3B3B3B;
+        &:last-child{
+            margin-bottom: 14px;
+        }
+        &.active{
+            color: #8D81AC;
+            position: relative;
+            &::before{
+                content: "";
+                display: block;
+                width: 8px;
+                height: 53px;
+                background-color: #8D81AC;
+                position: absolute;
+                left: 0;
+                top: 13px;
+            }
+        }
+    }
+
+}
+.header-list_btn{
+    width: 26px;
+    height: 21px;
+    padding: 0;
+    background-color: transparent;
+    border: transparent;
+    outline: none;
+    &::before{
+        content: "";
+        display: block;
+        width: 15px;
+        height: 3px;
+        background-color: #FFFFFF;
+        border-radius: 5px;
+        margin-bottom: 6px;
+    }
+    &::after{
+        content: "";
+        display: block;
+        width: 26px;
+        height: 3px;
+        background-color: #FFFFFF;
+        border-radius: 5px;
+        margin-top: 6px;
+    }
+}
+.header-list_btn__line{
+    display: block;
+    width: 26px;
+    height: 3px;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+}
