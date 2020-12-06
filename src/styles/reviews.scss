@@ -1,0 +1,41 @@
+
+.people{
+    text-align: center;
+    background-image: url("../img/testmonials-bg\ 1.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.pepople_title{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 48px;
+    font-family: 'Montserrat', sans-serif;
+    color:#FFFFFF;
+    padding: 57px 0 53px;
+}
+.review_img{
+    padding-bottom: 29px;
+}
+.review_parag{
+    font-family: 'Lato', sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    padding-bottom: 45px;
+    color: #FFFFFF;
+}
+.reviews{
+    display: grid;
+    grid-template-columns: 1fr;
+    @media(min-width:481px){
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 63px;
+    }
+    @media(min-width:992px){
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 97px;
+    }
+}
