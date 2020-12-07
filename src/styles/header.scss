@@ -125,7 +125,6 @@ header{
     }
     @media(min-width:481px){
         display: flex;
-        
     }
 }
 .block{
@@ -133,7 +132,7 @@ header{
     align-items: center;
     justify-content: center;
     @media(min-width:481px){
-        // position: relative;
+        position: relative;
     }
 }
 .header-list_btn{
