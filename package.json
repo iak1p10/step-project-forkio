@@ -19,7 +19,8 @@
     "url": "https://github.com/iak1p10/step-project-forkio/issues"
   },
   "homepage": "https://github.com/iak1p10/step-project-forkio#readme",
-  "devDependencies": {
+  "devDependencies": 
+  {
     "browser-sync": "^2.26.13",
     "del": "^6.0.0",
     "gulp": "^4.0.2",
