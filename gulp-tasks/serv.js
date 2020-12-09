@@ -5,7 +5,6 @@ const serv = () => {
 		server: {
 			baseDir: "./",
 		},
-		browser: "chrome",
 	});
 };
 exports.browsersync = browserSync;
