@@ -3,13 +3,21 @@
     margin: 0 auto;
     padding: 0 10px;
     @media(min-width:481px){
-        width: 684px;
+        width: 461px;
     }
-    @media(min-width:992px){
+    @media(min-width:685px){
+        width: 664px;
+    }
+    @media(min-width:993px){
+        width: 972px;
+    }
+    @media(min-width:1181px){
+        width: 1160px;
+    }
+    @media(min-width:1199px){
         width: 1180px;
     }
 }
-
 html,body{
     min-width: 320px;
 }

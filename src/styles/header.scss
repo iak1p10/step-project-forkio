@@ -6,6 +6,31 @@ header{
     align-items: center;
     justify-content: space-between;
     position: relative;
+    @media(min-width:481px){
+        display: inline;
+
+    }
+    @media(min-width:992px){
+        display: flex;
+    }
+}
+.logo{
+    display: flex;
+    align-items: center;
+
+    &-text{
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 16px;
+        font-family: 'Lato', sans-serif;
+        color: #8D81AC;
+        text-transform: uppercase;
+        padding-left: 17px;
+        @media(max-width:481px){
+            display: none;
+        }
+    }
 }
 .header_btn{
     background-color: #8D81AC;
@@ -21,16 +46,23 @@ header{
     line-height: 15px;
     color: #FFFFFF;
     margin: 34px 0 32px;
+    @media(min-width:481px){
+        width: 145px;
+        height: 37px;
+        margin-bottom: 34px;
+    }
 }
 .header-list{
     display: none;
-    &.active{
-        display: block;
-        position: absolute;
-        width: 290px;
-        left: 0;
-        top: 103px;
-        background-color:#333333;
+    @media (max-width:480px) {
+        &.active{
+            display: block;
+            position: absolute;
+            width: 290px;
+            left: 0;
+            top: 103px;
+            background-color:#333333;
+        }
     }
     &_item{
         padding: 29px 0 21px 35px;
@@ -40,26 +72,70 @@ header{
         font-size: 26px;
         line-height: 26px;
         color: #FFFFFF;
-        border-bottom: 3px solid #3B3B3B;
-        &:last-child{
-            margin-bottom: 14px;
+        @media (max-width:481px) {
+            border-bottom: 3px solid #3B3B3B;
+            &:last-child{
+                margin-bottom: 14px;
+            }
+            &.active{
+                color: #8D81AC;
+                position: relative;
+                &::before{
+                    content: "";
+                    display: block;
+                    width: 8px;
+                    height: 53px;
+                    background-color: #8D81AC;
+                    position: absolute;
+                    left: 0;
+                    top: 13px;
+                }
+            }
+            &:focus{
+                color: #8D81AC;
+                position: relative;
+                &::before{
+                    content: "";
+                    display: block;
+                    width: 8px;
+                    height: 53px;
+                    background-color: #8D81AC;
+                    position: absolute;
+                    left: 0;
+                    top: 13px;
+                }
+            }
         }
-        &.active{
-            color: #8D81AC;
-            position: relative;
-            &::before{
-                content: "";
-                display: block;
-                width: 8px;
-                height: 53px;
-                background-color: #8D81AC;
-                position: absolute;
-                left: 0;
-                top: 13px;
+        @media(min-width:481px){
+            padding: 0;
+            padding-right: 47px;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 18px;   
+            color: #8D81AC;  
+            &:last-child{
+                padding-right: 0;
+            }
+        }
+        @media(min-width:992px){
+            &:last-child{
+                padding-right: 47px;
             }
         }
     }
-
+    @media(min-width:481px){
+        display: flex;
+        margin: 20px 0;
+    }
+}
+.block{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @media(min-width:481px){
+        position: relative;
+    }
 }
 .header-list_btn{
     width: 26px;
@@ -76,6 +152,8 @@ header{
         background-color: #FFFFFF;
         border-radius: 5px;
         margin-bottom: 6px;
+        transition: 0.3s;
+        margin-left: 11px;
     }
     &::after{
         content: "";
@@ -85,6 +163,26 @@ header{
         background-color: #FFFFFF;
         border-radius: 5px;
         margin-top: 6px;
+        transition: 0.3s;
+    }
+    @media(min-width:481px){
+        display: none;
+    }
+}
+.header-list_btn.active{
+    &::before{
+        width: 32px;
+        transform: translatex(-11px) translateY(9px) rotate(45deg);
+        transition: 0.3s;
+    }
+    &::after{
+        width: 32px;
+        transform: translateY(-9px) rotate(-45deg);
+        transition: 0.3s;
+    }
+    .header-list_btn__line{
+        background-color: transparent;
+        transition: 0.1s;
     }
 }
 .header-list_btn__line{
@@ -93,4 +191,6 @@ header{
     height: 3px;
     background-color: #FFFFFF;
     border-radius: 5px;
+    transition: 0.1s;
 }
+
