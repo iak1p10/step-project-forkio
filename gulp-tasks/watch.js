@@ -10,7 +10,7 @@ const watchTask = () => {
 	});
 	watch("./src/styles/*.scss", styles);
 	watch("./src/js/*.js", scripts);
-
+	
 };
 
 exports.watch = watchTask;

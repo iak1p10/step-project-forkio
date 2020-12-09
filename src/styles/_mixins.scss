@@ -1,0 +1,32 @@
+@mixin revolutionary_container {
+  display: flex;
+  margin-right: 8px;
+  margin-bottom: 22px;
+}
+
+@mixin revolutionary_item_wrapper_icon {
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(#ffffff, #e2e1e1);
+  height: 22px;
+  width: 77px;
+  border: 1px solid var(--unlimited-color);
+}
+
+@mixin wrapper_icom_image {
+  align-self: center;
+  margin-right: 3px;
+}
+
+@mixin wrapper_icon_item-text {
+  align-self: center;
+  margin-left: 3px;
+  margin-right: 1px;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 12px;
+  line-height: 16px;
+  color: var(--revolution_text-color);
+}
+

@@ -1,0 +1,102 @@
+.revolutionary-wrapper {
+  padding-top: 36px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.revolutionary_item-revolutionary {
+  margin-top: 74px;
+  font: {
+    family: Montserrat;
+    style: normal;
+    weight: bold;
+    size: 26px;
+  }
+  line-height: 28px;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--revolutionary-color);
+  @media (min-width: 481px) {
+    margin-top: 102px;
+    margin-right: 8px;
+    font-size: 42px;
+  }
+  @media (min-width: 992px) {
+  }
+}
+
+.revolutionary_item-unlimited {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 15px;
+  color: var(--unlimited-color);
+}
+
+.revolutionary_item-text {
+  margin-top: 22px;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--revolution_text-color);
+  text-align: center;
+  @media (min-width: 481px) {
+    margin-top: 20px;
+    font-size: 21px;
+    line-height: 32px;
+  }
+  @media (min-width: 992px) {
+  }
+}
+
+.revolutionary_item_wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 31px;
+  @media (min-width: 481px) {
+    margin-top: 36px;
+  }
+  @media (min-width: 992px) {
+  }
+}
+
+.revolutionary_container {
+  @include revolutionary_container;
+}
+
+.revolutionary_item_wrapper_icon {
+  @include revolutionary_item_wrapper_icon;
+}
+
+.wrapper_icom_image {
+  @include wrapper_icom_image;
+}
+
+.wrapper_icon_item-text {
+  @include wrapper_icon_item-text;
+}
+
+.revolutionary_item_wrapper_number {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(255, 255, 255);
+  height: 22px;
+  width: 40px;
+  border-top: 1px solid var(--unlimited-color);
+  border-right: 1px solid var(--unlimited-color);
+  border-bottom: 1px solid var(--unlimited-color);
+
+  align-items: center;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 11px;
+  line-height: 16px;
+  color: var(--revolution_text-color);
+}

@@ -1,0 +1,16 @@
+.container{
+    width: 290px;
+    margin: 0 auto;
+    padding: 0 10px;
+    @media(min-width:481px){
+        width: 684px;
+    }
+    @media(min-width:992px){
+        width: 1180px;
+    }
+}
+
+html,body{
+    min-width: 320px;
+}
+
