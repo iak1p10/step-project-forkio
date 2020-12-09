@@ -1,12 +1,12 @@
 
-.people{
+.reviews-container{
     text-align: center;
     background-image: url("../img/testmonials-bg\ 1.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
-.pepople_title{
+.reviews_title{
     font-style: normal;
     font-weight: bold;
     font-size: 36px;
@@ -16,7 +16,7 @@
     padding: 57px 0 53px;
 }
 .review_img{
-    padding-bottom: 29px;
+    padding-bottom: 22px;
 }
 .review_parag{
     font-family: 'Lato', sans-serif;
@@ -30,6 +30,8 @@
 .reviews{
     display: grid;
     grid-template-columns: 1fr;
+    justify-content:center;
+    align-items: center;
     @media(min-width:481px){
         grid-template-columns: 1fr 1fr;
         grid-column-gap: 63px;
@@ -39,7 +41,7 @@
         grid-column-gap: 97px;
     }
 }
-.people_footer{
+.reviews_footer{
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -47,4 +49,24 @@
     font-family: 'Lato', sans-serif;
     color: #A291A5;
     padding-bottom: 22px;
+    &::after{
+        content: "";
+        display: block;
+        width: 245px;
+        height: 2px;
+        margin: auto;
+        margin-top: 22px;
+        background-color: #645766;
+        @media(min-width:481px){
+            width: 200px;
+            height: 2px;
+        }
+        @media(min-width:685px){
+            width: 555px;
+        }
+        @media(min-width:992px){
+            width: 780px;
+            height: 2px;
+        }
+    }
 }
