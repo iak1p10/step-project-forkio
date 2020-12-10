@@ -39,8 +39,9 @@
         font-family: 'Montserrat', sans-serif;
         color: #848E97;
         padding: 14px 0 0px;
-        // padding: 14px 0 416px;
+        padding: 14px 0 467px;
         text-transform: uppercase;
+        position: relative;
         &::after{
             display: flex;
             content: "Download For Free Now";
@@ -50,20 +51,46 @@
             align-items: center;
             width: 290px;
             height: 45px;
-            margin: 394px auto 0;
+            margin:0 auto;
             background-color:#8D81AC; 
             border: transparent; 
             font-style: normal;
             font-weight: bold;
-            font-size: 18px;
-            line-height: 20px;
+            font-size: 21px;
+            line-height: 23px;
             outline: transparent;
             padding: 0;
             font-family: 'Montserrat', sans-serif;
             color: #FFFFFF;
+            position: absolute;
+            left: 0;
+            bottom: -24px;
         @media(min-width:481px){
             width: 390px;
             height: 62px; 
+            position: absolute;
+            left: 40px ;
+            bottom: -31px;
+        }
+        @media(min-width:685px){
+            position: absolute;
+            left: 137px;
+            bottom: -30px;        
+        }
+        @media(min-width:993px){
+            position: absolute;
+            left: 287px;
+            bottom: -31px;
+        }
+        @media(min-width:1181px){
+            position: absolute;
+            left: 379px;
+            bottom: -31px;
+        }
+        @media(min-width:1199px){
+            position: absolute;
+            left: 392px;
+            bottom: -31px;
         }
         }
     }
@@ -98,4 +125,13 @@
 //         width: 390px;
 //         height: 62px; 
 //     }
+// }
+// .wrapper{
+//     width: 100%;
+//     position: absolute;
+// }
+// .btn{
+//     position: absolute;
+//     left:auto;
+//     top: 0;
 // }
