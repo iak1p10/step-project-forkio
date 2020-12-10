@@ -1,5 +1,8 @@
 header{
     background-color: #27262A;
+    @media(min-width:992px){
+        background-color: #000000;
+    }
 }
 .header{
     display: flex;
@@ -7,8 +10,12 @@ header{
     justify-content: space-between;
     position: relative;
     @media(min-width:481px){
-        display: inline;
-
+        display: grid;
+        grid-template-rows: auto;
+        justify-content: center;
+        grid-template-areas:
+        "logo btn"
+        "navigation navigation";
     }
     @media(min-width:992px){
         display: flex;
@@ -17,7 +24,7 @@ header{
 .logo{
     display: flex;
     align-items: center;
-
+    grid-area:logo;
     &-text{
         font-style: normal;
         font-weight: bold;
@@ -30,6 +37,13 @@ header{
         @media(max-width:481px){
             display: none;
         }
+    }
+    &:hover .logo-text{
+        color: #FFFFFF;
+    }
+    &:hover rect {
+        
+        fill:url(#pattern0);
     }
 }
 .header_btn{
@@ -46,14 +60,21 @@ header{
     line-height: 15px;
     color: #FFFFFF;
     margin: 34px 0 32px;
+    grid-area:btn;
     @media(min-width:481px){
         width: 145px;
         height: 37px;
         margin-bottom: 34px;
     }
+    &:hover{
+        background: #FFFFFF;
+        color:#8D81AC;
+        border: 1px solid #8D81AC;
+    }
 }
 .header-list{
     display: none;
+    grid-area:navigation;
     @media (max-width:480px) {
         &.active{
             display: block;
@@ -72,6 +93,7 @@ header{
         font-size: 26px;
         line-height: 26px;
         color: #FFFFFF;
+        cursor: pointer;
         @media (max-width:481px) {
             border-bottom: 3px solid #3B3B3B;
             &:last-child{
@@ -122,6 +144,9 @@ header{
             &:last-child{
                 padding-right: 47px;
             }
+        }
+        &:hover{
+            color: #FFFFFF;
         }
     }
     @media(min-width:481px){
