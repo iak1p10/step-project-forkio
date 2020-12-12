@@ -29,36 +29,35 @@ header{
     align-items: center;
     grid-area:logo;
     order: -1;
-    &-text{
-        font-style: normal;
-        font-weight: bold;
+    cursor: pointer;
+    &__text{
+        @extend %fsb;
         font-size: 24px;
         line-height: 16px;
-        font-family: 'Lato', sans-serif;
-        color: #8D81AC;
+        font-family: $fontLato;
+        color: var(--here_is_text-color);
         text-transform: uppercase;
         padding-left: 17px;
         @media(max-width:481px){
             display: none;
         }
     }
-    &:hover .logo-text{
+    &:hover .logo__text{
         color: #FFFFFF;
     }
-    &:hover rect {
-        fill:url(#pattern0);
+    &:hover svg {
+        filter: brightness(0) invert(1);
     }
 }
-.header_btn{
-    background-color: #8D81AC;
+.header-btn{
+    background-color: var(--here_is_text-color);
     border-radius: 40px;
     width: 119px;
     height: 37px;
     border: none;
     outline: none;
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: bold;
+    font-family:$fontMont;
+    @extend %fsb;
     font-size: 15px;
     line-height: 15px;
     color: #FFFFFF;
@@ -71,8 +70,8 @@ header{
         order: 0;
     }
     &:hover{
-        background: #FFFFFF;
-        color:#8D81AC;
+        background-color: #FFFFFF;
+        color: var(--here_is_text-color);
         border: 1px solid #8D81AC;
     }
 }
@@ -80,9 +79,11 @@ header{
     display: none;
     grid-area:navigation;
     width: 100%;
+    z-index: 50;
     @media (max-width:480px) {
         &.active{
             display: block;
+            z-index: 50;
             position: absolute;
             width: 290px;
             left: 0;
@@ -90,11 +91,10 @@ header{
             background-color:#333333;
         }
     }
-    &_item{
+    &__item{
         padding: 29px 0 21px 35px;
-        font-family: 'Montserrat', sans-serif;
-        font-style: normal;
-        font-weight: normal;
+        font-family:$fontMont;
+        @extend %fsn;
         font-size: 26px;
         line-height: 26px;
         color: #FFFFFF;
@@ -105,21 +105,21 @@ header{
                 margin-bottom: 14px;
             }
             &.active{
-                color: #8D81AC;
+                color: var(--here_is_text-color);
                 position: relative;
                 &::before{
                     content: "";
                     display: block;
                     width: 8px;
                     height: 53px;
-                    background-color: #8D81AC;
+                    background-color: var(--here_is_text-color);
                     position: absolute;
                     left: 0;
                     top: 13px;
                 }
             }
             &:focus{
-                color: #8D81AC;
+                color: var(--here_is_text-color);
                 position: relative;
                 &::before{
                     content: "";
@@ -140,13 +140,13 @@ header{
             font-weight: bold;
             font-size: 16px;
             line-height: 18px;   
-            color: #8D81AC;  
+            color:var(--here_is_text-color);  
             &:last-child{
                 padding-right: 0;
             }
-        }
-        &:hover{
+            &:hover{
             color: #FFFFFF;
+            }
         }
     }
     @media(min-width:481px){
@@ -168,7 +168,7 @@ header{
         margin: 0 auto;
     }
 }
-.header-list_btn{
+.header-list__btn{
     width: 26px;
     height: 21px;
     padding: 0;
@@ -200,7 +200,7 @@ header{
         display: none;
     }
 }
-.header-list_btn.active{
+.header-list__btn.active{
     &::before{
         width: 32px;
         transform: translatex(-11px) translateY(9px) rotate(45deg);
@@ -211,16 +211,16 @@ header{
         transform: translateY(-9px) rotate(-45deg);
         transition: 0.3s;
     }
-    .header-list_btn__line{
+    .header-list__btn__line{
         background-color: transparent;
         transition: 0.1s;
     }
 }
-.header-list_btn__line{
+.header-list__btn__line{
     display: block;
     width: 26px;
     height: 3px;
-    background-color: #FFFFFF;
+    background-color:var(--here_is-background);
     border-radius: 5px;
     transition: 0.1s;
 }

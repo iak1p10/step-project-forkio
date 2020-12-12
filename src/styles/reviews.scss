@@ -6,20 +6,19 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
-.reviews_title{
-    font-style: normal;
-    font-weight: bold;
+.reviews__title{
+    @extend %fsb;
     font-size: 36px;
     line-height: 48px;
-    font-family: 'Montserrat', sans-serif;
+    font-family:$fontMont;
     color:#FFFFFF;
     padding: 57px 0 53px;
 }
-.review_img{
+.review__img{
     padding-bottom: 22px;
 }
-.review_parag{
-    font-family: 'Lato', sans-serif;
+.review__parag{
+    font-family: $fontLato;
     font-style: italic;
     font-weight: bold;
     font-size: 16px;
@@ -41,12 +40,11 @@
         grid-column-gap: 97px;
     }
 }
-.reviews_footer{
-    font-style: normal;
-    font-weight: normal;
+.reviews__footer{
+    @extend %fsn;
     font-size: 14px;
     line-height: 21px;
-    font-family: 'Lato', sans-serif;
+    font-family: $fontLato;
     color: #A291A5;
     padding-bottom: 22px;
     &::after{
