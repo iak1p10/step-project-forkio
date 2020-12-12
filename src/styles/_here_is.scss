@@ -2,7 +2,7 @@
 .here-is {
   position: relative;
   @media (min-width: 481px) {
-    padding-bottom: 107px;
+    padding-bottom: 127px;
   }
   @media (min-width: 992px) {
     background-color: var(--here_is-background);
@@ -75,6 +75,8 @@
       justify-content: flex-start;
       align-self: flex-start;
       max-width: 50%;
+      height: 520px;
+      margin-top: 49px;
     }
   }
 }

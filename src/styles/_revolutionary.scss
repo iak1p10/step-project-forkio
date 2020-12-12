@@ -19,7 +19,7 @@
     font-weight: normal;
     font-size: 14px;
     line-height: 15px;
-    color: var(--unlimited-color);
+    color: $cap-color;
 
     @media (min-width: 481px) {
     }
@@ -39,7 +39,7 @@
     line-height: 28px;
     text-transform: uppercase;
     text-align: center;
-    color: var(--revolutionary-color);
+    color: $content-color;
 
     @media (min-width: 481px) {
       margin-top: 102px;
@@ -61,7 +61,7 @@
     font-weight: normal;
     font-size: 14px;
     line-height: 20px;
-    color: var(--revolution_text-color);
+    color: $text-color;
     text-align: center;
 
     @media (min-width: 481px) {
@@ -97,10 +97,10 @@
 }
 
 .item-revolutionary {
-  @include revolutionary_container;
+  @include revolutionary-container;
 
   &__container {
-    @include revolutionary_item_wrapper_icon;
+    @include revolutionary__wrapper-icon;
   }
   //·Иконка
   &__icon {
@@ -114,20 +114,17 @@
   &__number {
     display: flex;
     justify-content: center;
-    background-color: rgb(255, 255, 255);
-    height: 22px;
-    width: 40px;
-    border-top: 1px solid var(--unlimited-color);
-    border-right: 1px solid var(--unlimited-color);
-    border-bottom: 1px solid var(--unlimited-color);
-
+    background-color: $background-color;
     align-items: center;
     font-family: Lato;
     font-style: normal;
     font-weight: 900;
     font-size: 11px;
     line-height: 16px;
-    color: var(--revolution_text-color);
+    color: $content-color;
+    margin-right: 10px;
+    margin-left: 10px;
   }
 }
+
 //·Контейнер·кнопок

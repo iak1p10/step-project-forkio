@@ -1,21 +1,23 @@
-@mixin revolutionary_container {
+@mixin revolutionary-container {
   display: flex;
   margin-right: 8px;
   margin-bottom: 22px;
+  border: 1.5px solid var(--border);
+  border-radius: 3px;
 }
 
-@mixin revolutionary_item_wrapper_icon {
+@mixin revolutionary__wrapper-icon {
   display: flex;
   justify-content: center;
   background: linear-gradient(#ffffff, #e2e1e1);
-  height: 22px;
-  width: 77px;
-  border: 1px solid var(--unlimited-color);
+
+  border-right: 1px solid var(--border);
 }
 
 @mixin wrapper_icom_image {
   align-self: center;
   margin-right: 3px;
+  margin-left: 9px;
 }
 
 @mixin wrapper_icon_item-text {
@@ -28,5 +30,7 @@
   font-size: 12px;
   line-height: 16px;
   color: var(--revolution_text-color);
+  margin-bottom: 4px;
+  margin-top: 4px;
+  margin-right: 10px;
 }
-

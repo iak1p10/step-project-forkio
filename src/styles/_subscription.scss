@@ -38,6 +38,7 @@
     @media (min-width: 992px) {
       padding-top: 50px;
       padding-bottom: 70px;
+      margin-top: 179px;
     }
   }
 
@@ -49,7 +50,7 @@
     display: flex;
     align-items: center;
     text-align: center;
-    color: var(--basic_color_text);
+    color: $base-color;
     font-size: 28px;
     line-height: 42px;
 
