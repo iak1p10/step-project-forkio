@@ -1,14 +1,10 @@
-const btn = document.querySelector(".header-list_btn");
+const btn = document.querySelector(".header-list__btn");
 const menu = document.querySelector(".header-list");
-const item = document.getElementsByClassName("header-list_item");
-const btnActive = document.querySelector(".header-list_btn");
+const item = document.getElementsByClassName("header-list__item");
 
 btn.addEventListener("click",function(){
     menu.classList.toggle("active");
-});
-
-btnActive.addEventListener("click",function(){
-    btnActive.classList.toggle("active");
+    btn.classList.toggle("active");
 });
 for (let index = 0; index < item.length; index++) {
     item[index].addEventListener("click",function(){
