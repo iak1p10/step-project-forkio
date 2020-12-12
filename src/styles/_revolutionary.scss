@@ -1,122 +1,133 @@
-.revolutionary-wrapper {
+//·Вторая·секция·revolutionary
+.revolutionary {
   padding-top: 36px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
   @media (min-width: 481px) {
   }
   @media (min-width: 992px) {
     padding-top: 50px;
   }
+
+  //·Верхняя·подпись
+  &__signature {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 15px;
+    color: var(--unlimited-color);
+
+    @media (min-width: 481px) {
+    }
+    @media (min-width: 992px) {
+    }
+  }
+
+  //·Оглавление
+  &__contents {
+    margin-top: 74px;
+    font: {
+      family: Montserrat;
+      style: normal;
+      weight: bold;
+      size: 26px;
+    }
+    line-height: 28px;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--revolutionary-color);
+
+    @media (min-width: 481px) {
+      margin-top: 102px;
+      margin-right: 8px;
+      font-size: 42px;
+    }
+    @media (min-width: 992px) {
+      margin-top: 77px;
+      font-size: 54px;
+      margin-left: 14px;
+    }
+  }
+
+  //·Текст
+  &__text {
+    margin-top: 22px;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--revolution_text-color);
+    text-align: center;
+
+    @media (min-width: 481px) {
+      margin-top: 20px;
+      font-size: 21px;
+      line-height: 32px;
+    }
+    @media (min-width: 992px) {
+      white-space: normal;
+      margin-top: 40px;
+      font-size: 21px;
+      line-height: 32px;
+      max-width: 82%;
+      letter-spacing: 1px;
+    }
+  }
+
+  //·Блок·кнопок
+  &__row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 31px;
+
+    @media (min-width: 481px) {
+      margin-top: 36px;
+    }
+    @media (min-width: 992px) {
+      margin-top: 23px;
+      margin-bottom: 49px;
+    }
+  }
 }
 
-.revolutionary_item-revolutionary {
-  margin-top: 74px;
-  font: {
-    family: Montserrat;
-    style: normal;
-    weight: bold;
-    size: 26px;
-  }
-  line-height: 28px;
-  text-transform: uppercase;
-  text-align: center;
-  color: var(--revolutionary-color);
-  @media (min-width: 481px) {
-    margin-top: 102px;
-    margin-right: 8px;
-    font-size: 42px;
-  }
-  @media (min-width: 992px) {
-    margin-top: 77px;
-    font-size: 54px;
-    margin-left: 14px;
-  }
-}
-
-.revolutionary_item-unlimited {
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 15px;
-  color: var(--unlimited-color);
-  @media (min-width: 481px) {
-  }
-  @media (min-width: 992px) {
-  }
-}
-
-.revolutionary_item-text {
-  margin-top: 22px;
-  font-family: Lato;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 20px;
-  color: var(--revolution_text-color);
-  text-align: center;
-  @media (min-width: 481px) {
-    margin-top: 20px;
-    font-size: 21px;
-    line-height: 32px;
-  }
-  @media (min-width: 992px) {
-    white-space: normal;
-    margin-top: 40px;
-    font-size: 21px;
-    line-height: 32px;
-    max-width: 82%;
-    letter-spacing: 1px;
-  }
-}
-
-.revolutionary_item_wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-top: 31px;
-  @media (min-width: 481px) {
-    margin-top: 36px;
-  }
-  @media (min-width: 992px) {
-    margin-top: 23px;
-    margin-bottom: 49px;
-  }
-}
-
-.revolutionary_container {
+.item-revolutionary {
   @include revolutionary_container;
-}
 
-.revolutionary_item_wrapper_icon {
-  @include revolutionary_item_wrapper_icon;
-}
+  &__container {
+    @include revolutionary_item_wrapper_icon;
+  }
+  //·Иконка
+  &__icon {
+    @include wrapper_icom_image;
+  }
+  //·Текст
+  &__text {
+    @include wrapper_icon_item-text;
+  }
+  //·Число
+  &__number {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+    height: 22px;
+    width: 40px;
+    border-top: 1px solid var(--unlimited-color);
+    border-right: 1px solid var(--unlimited-color);
+    border-bottom: 1px solid var(--unlimited-color);
 
-.wrapper_icom_image {
-  @include wrapper_icom_image;
+    align-items: center;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 11px;
+    line-height: 16px;
+    color: var(--revolution_text-color);
+  }
 }
-
-.wrapper_icon_item-text {
-  @include wrapper_icon_item-text;
-}
-
-.revolutionary_item_wrapper_number {
-  display: flex;
-  justify-content: center;
-  background-color: rgb(255, 255, 255);
-  height: 22px;
-  width: 40px;
-  border-top: 1px solid var(--unlimited-color);
-  border-right: 1px solid var(--unlimited-color);
-  border-bottom: 1px solid var(--unlimited-color);
-
-  align-items: center;
-  font-family: Lato;
-  font-style: normal;
-  font-weight: 900;
-  font-size: 11px;
-  line-height: 16px;
-  color: var(--revolution_text-color);
-}
+//·Контейнер·кнопок
