@@ -1,7 +1,7 @@
 
 .reviews-container{
     text-align: center;
-    background-image: url("../img/testmonials-bg\ 1.png");
+    background-image: url("../img/reviews_img/testmonials-bg\ 1.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -13,6 +13,11 @@
     font-family:$fontMont;
     color:#FFFFFF;
     padding: 57px 0 53px;
+    @media(min-width:481px){
+        padding-top: 108px;
+        font-size: 48px;
+        line-height: 50px;
+    }
 }
 .review__img{
     padding-bottom: 22px;
@@ -25,12 +30,15 @@
     line-height: 24px;
     padding-bottom: 45px;
     color: #FFFFFF;
+    @media(min-width:481px){
+        padding-bottom: 112px;
+    }
 }
 .reviews{
     display: grid;
     grid-template-columns: 1fr;
     justify-content:center;
-    align-items: center;
+    align-items: flex-end;
     @media(min-width:481px){
         grid-template-columns: 1fr 1fr;
         grid-column-gap: 63px;
