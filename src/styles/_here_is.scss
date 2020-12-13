@@ -2,11 +2,11 @@
 .here-is {
   position: relative;
   @media (min-width: 481px) {
-    padding-bottom: 123px;
+    padding-bottom: 120px;
   }
   @media (min-width: 992px) {
     background-color: $back-color;
-    padding-bottom: 105px;
+    padding-bottom: 99px;
   }
 
   &__body {
@@ -21,7 +21,7 @@
   }
 
   &__contents {
-    padding-top: 95px;
+    padding-top: 92px;
     font-family: $fontMont;
     font-style: normal;
     font-weight: bold;
@@ -54,12 +54,19 @@
       top: 820px;
       left: 25px;
     }
+    @media (min-width: 680px) {
+      display: block;
+      position: absolute;
+      content: "";
+      top: 820px;
+      left: 25px;
+    }
     @media (min-width: 992px) {
       display: block;
       position: absolute;
       content: "";
       top: 160px;
-      left: 585px;
+      left: 589px;
     }
   }
   //·Контейнер
@@ -69,6 +76,7 @@
     justify-content: center;
     align-items: center;
     padding-top: 34px;
+    padding-bottom: 4px;
     @media (min-width: 481px) {
       padding-top: 35px;
     }
@@ -158,8 +166,9 @@
 
   &__icon {
     position: absolute;
-    top: 58px;
+    top: 61px;
     left: -155px;
+
     @media (min-width: 481px) {
       display: none;
     }

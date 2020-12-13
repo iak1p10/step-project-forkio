@@ -1,110 +1,116 @@
-.main-header{
-    background-image: url("../img/header/header-img.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: bottom;
-    text-align: center;
-    &__title{
-        @extend %fsb;
-        font-size: 48px;
-        line-height: 48px;
-        font-family:$fontMont;
-        color: #FFFFFF;
-        padding-top: 50px;
-        @media(min-width:481px){
-            font-size: 72px;
-            line-height: 72px;
-            padding-top: 69px;
-        }
-        @media(min-width:992px){
-            padding-top: 90px;
-            font-size: 82px;
-            line-height: 82px;
-        }
+.main-header {
+  background-image: url("../img/header/header-img.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  text-align: center;
+  &__title {
+    @extend %fsb;
+    font-size: 48px;
+    line-height: 48px;
+    font-family: $fontMont;
+    color: #ffffff;
+    padding-top: 50px;
+    @media (min-width: 481px) {
+      font-size: 72px;
+      line-height: 72px;
+      padding-top: 69px;
     }
+    @media (min-width: 992px) {
+      padding-top: 90px;
+      font-size: 82px;
+      line-height: 82px;
+    }
+  }
 }
-.main-header__parag{
-    @extend %fsn;
-    font-size: 18px;
+.main-header__parag {
+  @extend %fsn;
+  font-size: 18px;
+  line-height: 24px;
+  font-family: $fontMont;
+  color: #8d81ac;
+  padding-top: 19px;
+  @media (min-width: 481px) {
+    font-size: 22px;
     line-height: 24px;
-    font-family:$fontMont;
-    color: #8D81AC;
-    padding-top: 19px;
-    @media(min-width:481px){
-        font-size: 22px;
-        line-height: 24px;
-    }
-    @media(min-width:992px){
-        font-size: 30px;
-        line-height: 30px;
-    }
+  }
+  @media (min-width: 992px) {
+    font-size: 30px;
+    line-height: 30px;
+  }
 }
-.main-header__vers{
-    @extend %fsn;
-    font-size: 14px;
-    line-height: 14px;
-    font-family:$fontMont;
-    color: #848E97;
+.main-header__vers {
+  @extend %fsn;
+  font-size: 14px;
+  line-height: 14px;
+  font-family: $fontMont;
+  color: #848e97;
+  padding: 14px 0 421px;
+  text-transform: uppercase;
+  position: relative;
+  &::after {
+    display: flex;
+    content: "Download For Free Now";
+    text-transform: none;
+    border-radius: 40px;
+    justify-content: center;
+    align-items: center;
+    width: 290px;
+    height: 45px;
+    margin: 0 auto;
+    background-color: #8d81ac;
+    border: 1px solid #8d81ac;
+    @extend %fsb;
+    font-size: 18px;
+    line-height: 20px;
+    outline: transparent;
+    padding: 0;
+    font-family: $fontMont;
+    color: #ffffff;
+    position: absolute;
+    left: 0;
+    bottom: -23px;
+    @media (min-width: 481px) {
+      width: 390px;
+      height: 62px;
+      left: 40px;
+      bottom: -33px;
+    }
+    @media (min-width: 685px) {
+      left: 137px;
+      bottom: -32px;
+    }
+    @media (min-width: 993px) {
+      left: 287px;
+      bottom: -33px;
+    }
+    @media (min-width: 1181px) {
+      left: 379px;
+      bottom: -33px;
+    }
+    @media (min-width: 1199px) {
+      left: 395px;
+      bottom: -30px;
+    }
+  }
+  @media (min-width: 481px) {
     padding: 14px 0 467px;
-    text-transform: uppercase;
-    position: relative;
-    &::after{
-        display: flex;
-        content: "Download For Free Now";
-        text-transform: none;
-        border-radius: 40px;
-        justify-content: center;
-        align-items: center;
-        width: 290px;
-        height: 45px;
-        margin:0 auto;
-        background-color:#8D81AC; 
-        border: 1px solid #8D81AC; 
-        @extend %fsb;
-        font-size: 21px;
-        line-height: 23px;
-        outline: transparent;
-        padding: 0;
-        font-family:$fontMont;
-        color: #FFFFFF;
-        position: absolute;
-        left: 0;
-        bottom: -26px;
-        @media(min-width:481px){
-            width: 390px;
-            height: 62px;   
-            left: 40px ;
-            bottom: -33px;
-        }
-        @media(min-width:685px){
-            left: 137px;
-            bottom: -32px;        
-        }
-        @media(min-width:993px){
-            left: 287px;
-            bottom: -33px;
-        }
-        @media(min-width:1181px){
-            left: 379px;
-            bottom: -33px;
-        }
-        @media(min-width:1199px){
-            left: 395px;
-            bottom: -30px;
-        }  
-        &:hover::after{
-            background-color: #FFFFFF;
-            color: var(--here_is_text-color);
-            border: 1px solid #8D81AC;
-        }
-    }    
+  }
+  @media (min-width: 992px) {
+    padding: 14px 0 460px;
+  }
+  &:hover::after {
+    background-color: #ffffff;
+    color: var(--here_is_text-color);
+    border: 1px solid #8d81ac;
+  }
 }
-.main-header__text{
-    text-align: center;
-    @extend %fsn;
-    font-size: 14px;
-    line-height: 14px;
-    padding-top: 47px;
-    font-family:$fontMont;
-    color: #848E97;
+.main-header__text {
+  text-align: center;
+  @extend %fsn;
+  font-size: 14px;
+  line-height: 14px;
+  padding-top: 47px;
+  font-family: $fontMont;
+  color: #848e97;
 }
