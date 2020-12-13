@@ -2,10 +2,11 @@
 .here-is {
   position: relative;
   @media (min-width: 481px) {
-    padding-bottom: 127px;
+    padding-bottom: 567px;
   }
   @media (min-width: 992px) {
-    background-color: var(--here_is-background);
+    background-color: $back-color;
+    padding-bottom: 105px;
   }
 
   &__body {
@@ -21,13 +22,13 @@
 
   &__contents {
     padding-top: 95px;
-    font-family: Montserrat;
+    font-family: $fontMont;
     font-style: normal;
     font-weight: bold;
     font-size: 32px;
     line-height: 38px;
     text-align: center;
-    color: var(--here_is_text-color);
+    color: $main-color;
     max-width: 95%;
     @media (min-width: 481px) {
       margin-left: 22px;
@@ -135,7 +136,8 @@
     }
     @media (min-width: 992px) {
       margin-top: 0px;
-      margin-left: 9px;
+      margin-left: 0px;
+      margin-right: 32px;
     }
   }
 
@@ -191,13 +193,13 @@
   &__contents {
     margin-right: 5px;
     margin-top: 27px;
-    font-family: Montserrat;
+    font-family: $fontMont;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
     line-height: 16px;
     align-items: center;
-    color: var(--revolution_text-color);
+    color: $text-color;
     @media (min-width: 481px) {
       margin-top: 11px;
       margin-left: 3px;
@@ -229,13 +231,13 @@
   &__text {
     margin-right: 6px;
     margin-top: 14px;
-    font-family: Lato;
+    font-family: $fontLato;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
     line-height: 21px;
     text-align: center;
-    color: var(--unlimited-color);
+    color: $cap-color;
     @media (min-width: 481px) {
       text-align: start;
       margin-top: 3px;

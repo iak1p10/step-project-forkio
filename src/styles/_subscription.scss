@@ -38,13 +38,12 @@
     @media (min-width: 992px) {
       padding-top: 50px;
       padding-bottom: 70px;
-      margin-top: 179px;
     }
   }
 
   &__content {
     margin-right: 6px;
-    font-family: Montserrat;
+    font-family: $fontMont;
     font-style: normal;
     font-weight: bold;
     display: flex;
@@ -126,7 +125,7 @@
   }
 
   &__text {
-    font-family: Montserrat;
+    font-family: $fontMont;
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
@@ -168,7 +167,7 @@
 
   &__number {
     margin-top: 14px;
-    font-family: Montserrat;
+    font-family: $fontMont;
     font-style: normal;
     font-weight: normal;
     font-size: 60px;
@@ -244,7 +243,7 @@
     background-color: rgba(255, 255, 255, 0.15);
     mix-blend-mode: normal;
 
-    font-family: Montserrat;
+    font-family: $fontMont;
     font-style: normal;
     font-weight: normal;
     font-size: 15px;

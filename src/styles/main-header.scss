@@ -31,6 +31,10 @@
     color: #8D81AC;
     padding-top: 19px;
     @media(min-width:481px){
+        font-size: 22px;
+        line-height: 24px;
+    }
+    @media(min-width:992px){
         font-size: 30px;
         line-height: 30px;
     }
