@@ -24,25 +24,22 @@
   align-self: center;
   margin-left: 3px;
   margin-right: 1px;
-  font-family: Lato;
+  font-family: $fontLato;
   font-style: normal;
   font-weight: 900;
   font-size: 12px;
   line-height: 16px;
-  color: var(--revolution_text-color);
+  color: $text-color;
   margin-bottom: 4px;
   margin-top: 4px;
   margin-right: 10px;
 }
 
-
-%fsn{
+%fsn {
   font-style: normal;
   font-weight: normal;
 }
-%fsb{
+%fsb {
   font-style: normal;
-  font-weight:bold;
+  font-weight: bold;
 }
-
-

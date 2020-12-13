@@ -14,7 +14,7 @@
 
   //·Верхняя·подпись
   &__signature {
-    font-family: Montserrat;
+    font-family: $fontMont;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -31,7 +31,7 @@
   &__contents {
     margin-top: 74px;
     font: {
-      family: Montserrat;
+      family: $fontMont;
       style: normal;
       weight: bold;
       size: 26px;
@@ -116,7 +116,7 @@
     justify-content: center;
     background-color: $background-color;
     align-items: center;
-    font-family: Lato;
+    font-family: $fontLato;
     font-style: normal;
     font-weight: 900;
     font-size: 11px;
