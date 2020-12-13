@@ -7,7 +7,7 @@ const scripts = (cb) => {
 	src("./src/js/*.js")
 		.pipe(concat('script-min.js'))
 		// .pipe(minify())
-		.pipe(dest("./dist/js"))
+		.pipe(dest("./docs/js"))
 		.pipe(browsersync.reload({ stream: true }))
 	cb();
 };

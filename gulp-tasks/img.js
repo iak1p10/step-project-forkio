@@ -4,10 +4,10 @@ const imagemin = require('gulp-imagemin');
 const images = (cb) => {
     src('./src/img/*')
         .pipe(imagemin())
-        .pipe(dest('./dist/img'));
+        .pipe(dest('./docs/img'));
     src('./src/img/*/*')
         .pipe(imagemin())
-        .pipe(dest('./dist/img'))
+        .pipe(dest('./docs/img'))
     cb();
 };
 

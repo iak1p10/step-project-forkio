@@ -13,7 +13,7 @@ const styles = (cb) => {
             cascade: false
 		}))
 		.pipe(concat('style-min.css'))
-		.pipe(dest("./dist/css/"))
+		.pipe(dest("./docs/css/"))
 		.pipe(browsersync.reload({ stream: true }))
 	cb()
 };
