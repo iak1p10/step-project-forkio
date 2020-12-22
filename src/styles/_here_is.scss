@@ -33,15 +33,36 @@
     @media (min-width: 481px) {
       margin-left: 22px;
       padding-top: 140px;
+      font-size: 35px;
+      line-height: 44px;
+      transition-duration: 0.7s;
+    }
+    @media (min-width: 685px) {
+      margin-left: 22px;
+      padding-top: 140px;
       font-size: 42px;
       line-height: 44px;
+      transition-duration: 0.7s;
     }
     @media (min-width: 992px) {
       padding-top: 93px;
       margin-left: 23px;
-      font-size: 47px;
+      font-size: 35px;
       line-height: 50px;
       max-width: 100%;
+      transition-duration: 0.7s;
+    }
+    @media (min-width: 1000px) {
+      font-size: 37px;
+      transition-duration: 0.7s;
+    }
+    @media (min-width: 1050px) {
+      font-size: 38px;
+      transition-duration: 0.7s;
+    }
+    @media (min-width: 1199px) {
+      font-size: 47px;
+      transition-duration: 0.7s;
     }
   }
 
@@ -53,20 +74,79 @@
       content: "";
       top: 820px;
       left: 25px;
+      transition-duration: 0.7s;
     }
-    @media (min-width: 680px) {
+    @media (min-width: 506px) {
+      display: block;
+      position: absolute;
+      content: "";
+      top: 820px;
+      left: -75px;
+      scale: 60%;
+      transition-duration: 0.7s;
+    }
+    @media (min-width: 685px) {
       display: block;
       position: absolute;
       content: "";
       top: 820px;
       left: 25px;
+      transition-duration: 0.7s;
     }
-    @media (min-width: 992px) {
+    @media (min-width: 870px) {
       display: block;
       position: absolute;
       content: "";
-      top: 160px;
-      left: 589px;
+      top: 150px;
+      
+      left: 240px;
+      scale: 70%;
+      transition-duration: 0.7s;
+    }
+    @media (min-width: 986px) {
+      display: block;
+      position: absolute;
+      content: "";
+      top: 770px;
+      left: 0px;
+      scale: 110%;
+      transition-duration: 0.7s;
+    }
+    @media (min-width: 1000px) {
+      display: block;
+      position: absolute;
+      content: "";
+      top: 200px;
+      left: 400px;
+      scale: 70%;
+      transition-duration: 0.7s;
+    }
+    @media (min-width: 1181px) {
+      display: block;
+      position: absolute;
+      content: "";
+      top: 150px;
+      left: 545px;
+      scale: 83%;
+      transition-duration: 0.7s;
+    }
+    @media (min-width: 1199px) {
+      display: block;
+      position: absolute;
+      content: "";
+      top: 150px;
+      left: 545px;
+      scale: 87%;
+      transition-duration: 0.7s;
+    }
+    @media (min-width: 1250px) {
+      display: block;
+      position: absolute;
+      content: "";
+      top: 155px;
+      left: 590px;
+      scale: 100%;
+      transition-duration: 0.7s;
     }
   }
   //·Контейнер
