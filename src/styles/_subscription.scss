@@ -33,8 +33,9 @@
 
     @media (min-width: 481px) {
       padding-top: 50px;
-      padding-bottom: 91px;
+      padding-bottom: 20px;
     }
+
     @media (min-width: 992px) {
       padding-top: 76px;
       padding-bottom: 70px;
@@ -54,7 +55,12 @@
     line-height: 42px;
 
     @media (min-width: 481px) {
-      font-size: 42px;
+      font-size: 33px;
+      line-height: 44px;
+      margin-top: 13px;
+    }
+    @media (min-width: 600px) {
+      font-size: 33px;
       line-height: 44px;
       margin-top: 13px;
     }
@@ -80,14 +86,79 @@
       grid-row-gap: 1.9rem;
       margin-top: 38px;
       max-width: 93%;
+      transition: 0.7s;
+      scale: 0.8;
+      justify-content: center;
+      margin-top: -40px;
     }
-    @media (min-width: 992px) {
+    @media (min-width: 550px) {
+      & li:first-of-type {
+        margin-left: 35px;
+      }
+
+      grid-template-columns: 1fr 1fr;
+      grid-column-gap: 0.8rem;
+      grid-row-gap: 1.9rem;
+      margin-top: 38px;
+      max-width: 93%;
+      transition: 0.7s;
+      justify-content: center;
+      align-items: center;
+      scale: 0.8;
+      margin-top: -40px;
+    }
+    @media (min-width: 600px) {
+      & li:first-of-type {
+        margin-left: 35px;
+      }
+      grid-template-columns: 1fr 1fr;
+      grid-column-gap: 1rem;
+      grid-row-gap: 1.9rem;
+      margin-top: 38px;
+      max-width: 93%;
+      transition: 0.7s;
+      justify-content: center;
+      scale: 1;
+    }
+    @media (min-width: 993px) {
       grid-template-columns: 1fr 1fr 1fr 1fr;
       margin-top: 60px;
       max-width: 95%;
       grid-column-gap: 1rem;
       justify-content: center;
       margin-right: 30px;
+      transition: 0.7s;
+      scale: 0.85;
+    }
+    @media (min-width: 1020px) {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      margin-top: 60px;
+      max-width: 95%;
+      grid-column-gap: 1rem;
+      justify-content: center;
+      margin-right: 30px;
+      transition: 0.7s;
+      scale: 0.9;
+    }
+    @media (min-width: 1100px) {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      margin-top: 60px;
+      max-width: 95%;
+      grid-column-gap: 1rem;
+      justify-content: center;
+      margin-right: 30px;
+      transition: 0.7s;
+      scale: 0.99;
+    }
+    @media (min-width: 1150px) {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      margin-top: 60px;
+      max-width: 95%;
+      grid-column-gap: 1rem;
+      justify-content: center;
+      margin-right: 30px;
+      transition: 0.7s;
+      scale: 1;
     }
   }
 }

@@ -68,12 +68,14 @@
 
   &__icon {
     display: none;
+
     @media (min-width: 481px) {
       display: block;
       position: absolute;
       content: "";
       top: 820px;
-      left: 25px;
+      left: -97px;
+      scale: 65%;
       transition-duration: 0.7s;
     }
     @media (min-width: 506px) {
@@ -81,8 +83,26 @@
       position: absolute;
       content: "";
       top: 820px;
-      left: -75px;
-      scale: 60%;
+      left: -95px;
+      scale: 68%;
+      transition-duration: 0.7s;
+    }
+    @media (min-width: 530px) {
+      display: block;
+      position: absolute;
+      content: "";
+      top: 820px;
+      left: -90px;
+      scale: 70%;
+      transition-duration: 0.7s;
+    }
+    @media (min-width: 530px) {
+      display: block;
+      position: absolute;
+      content: "";
+      top: 820px;
+      left: -88px;
+      scale: 80%;
       transition-duration: 0.7s;
     }
     @media (min-width: 685px) {
@@ -90,17 +110,35 @@
       position: absolute;
       content: "";
       top: 820px;
-      left: 25px;
+      left: 24px;
+      scale: 100%;
+      transition-duration: 0.7s;
+    }
+    @media (min-width: 700px) {
+      display: block;
+      position: absolute;
+      content: "";
+      top: 820px;
+      left: 0px;
+      scale: 100%;
+      transition-duration: 0.7s;
+    }
+    @media (min-width: 820px) {
+      display: block;
+      position: absolute;
+      content: "";
+      top: 820px;
+      left: 60px;
+      scale: 100%;
       transition-duration: 0.7s;
     }
     @media (min-width: 870px) {
       display: block;
       position: absolute;
       content: "";
-      top: 150px;
-      
-      left: 240px;
-      scale: 70%;
+      top: 820px;
+      left: 80px;
+      scale: 100%;
       transition-duration: 0.7s;
     }
     @media (min-width: 986px) {
@@ -112,13 +150,31 @@
       scale: 110%;
       transition-duration: 0.7s;
     }
-    @media (min-width: 1000px) {
+    @media (min-width: 993px) {
       display: block;
       position: absolute;
       content: "";
       top: 200px;
       left: 400px;
       scale: 70%;
+      transition-duration: 0.7s;
+    }
+    @media (min-width: 1000px) {
+      display: block;
+      position: absolute;
+      content: "";
+      top: 200px;
+      left: 387px;
+      scale: 74%;
+      transition-duration: 0.7s;
+    }
+    @media (min-width: 1030px) {
+      display: block;
+      position: absolute;
+      content: "";
+      top: 200px;
+      left: 430px;
+      scale: 84%;
       transition-duration: 0.7s;
     }
     @media (min-width: 1181px) {
@@ -140,6 +196,15 @@
       transition-duration: 0.7s;
     }
     @media (min-width: 1250px) {
+      display: block;
+      position: absolute;
+      content: "";
+      top: 155px;
+      left: 580px;
+      scale: 87%;
+      transition-duration: 0.7s;
+    }
+    @media (min-width: 1300px) {
       display: block;
       position: absolute;
       content: "";
@@ -248,6 +313,22 @@
     position: absolute;
     top: 61px;
     left: -155px;
+    @media (min-width: 358px) {
+      left: -139px;
+      transition: 0.7s;
+    }
+    @media (min-width: 398px) {
+      left: -116px;
+      transition: 0.7s;
+    }
+    @media (min-width: 420px) {
+      left: -108px;
+      transition: 0.7s;
+    }
+    @media (min-width: 450px) {
+      left: -80px;
+      transition: 0.7s;
+    }
 
     @media (min-width: 481px) {
       display: none;
