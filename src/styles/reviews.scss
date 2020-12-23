@@ -47,7 +47,12 @@
   grid-template-columns: 1fr;
   justify-content: center;
   align-items: center;
-  @media (min-width: 481px) {
+  @media(min-width:481px){
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 63px;
+    align-items: center;
+  }
+  @media(min-width:753px){
     grid-template-columns: 345px 345px;
     grid-column-gap: 63px;
     align-items: baseline;

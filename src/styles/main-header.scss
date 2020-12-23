@@ -49,6 +49,7 @@
   text-transform: uppercase;
   position: relative;
   &::after {
+    cursor: pointer;
     display: flex;
     content: "Download For Free Now";
     text-transform: none;
